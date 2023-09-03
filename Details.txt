@@ -36,7 +36,7 @@ Topics:
   
   Async/Await:
 
-    avoid chaining of promises
+    avoid chaining of promises, synchronous execution promises
 
       async --> implies we are carring an async operation inside a function
       await --> waiting for the promise to get resolved
