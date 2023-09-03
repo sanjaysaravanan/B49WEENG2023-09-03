@@ -1,0 +1,61 @@
+
+Topics:
+
+  Promise:
+    Object to understand the completion(or failure) of an asynchronous event/operation
+
+    MDN-> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+    State:
+      pending --->  initial state, neither fulfilled(success) nor rejected(failure).
+
+      fullfilled ---> meaning that the operation was completed successfully with a value
+
+      rejected ---> meaning that the operation failed with a reason
+
+    methods:
+      then ---> executed when the promise is fullfilled/resolved
+      catch ---> executed when the promise is rejected/unfullfilled
+    
+    Chaining --> returning an promise from resolvement in parent promise
+      execution time --> sum of time taken by all promise chains
+    All --> Independent Promise triggered simultaneously/parallel
+      execution: Maximum time among promises
+    Any --> trigger independent promises
+      resolve is success when any one is resolved
+
+  Fetch & then
+    Fetch -> Interface to make an api call
+      then ---> response --> convert response to json -> promsie .then (json -> operation on json)
+  
+  Session Task:
+    use fetch and get the data from the below url,
+    https://api.disneyapi.dev/character
+
+    Print the array of disney characters
+  
+  Async/Await:
+
+    avoid chaining of promises
+
+      async --> implies we are carring an async operation inside a function
+      await --> waiting for the promise to get resolved
+
+Next Session:
+ 
+  1. Publics APIs
+    Look for You requirement & Choose a type of API
+    Use APIs which has HTTPS 
+    If Signing is fine Go for Auth, HTTPS, CORS enabled
+
+    Read the Documentation Test the API before choosing it
+
+  2. Implementation of DOM manipulation examples
+    1. Email Verify examples
+    2. Get City weather examples
+
+  3. Design Ideas, https://spicey-hut.netlify.app/recipe.html, https://shoppingcart-spicyhut.netlify.app/#header
+
+  intro to public APIs ---> Choose public APIs based on the API_key, Https, Cors
+
+  https://api.openweathermap.org/data/2.5/weather?q=Chennai&appid=991f626650507e6605c2ca33f8edc191
